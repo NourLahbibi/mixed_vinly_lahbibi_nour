@@ -26,7 +26,7 @@ class VinylMix
     #[ORM\Column(length: 255)]
     private ?string $genre = null;
 
-    #[ORM\Column(type: Types::DATE_IMMUTABLE)]
+    #[ORM\Column]
     private ?\DateTimeImmutable $createdAt = null;
 
     public function getId(): ?int
